@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fabric Phone Case</title>
+</head>
+
+<body>
+    <div class="flex">
+        <canvas id="fabric" width="800" height="800"></canvas>
+        <div>
+            <p>SkewX</p>
+            <input type="range" name="skewx" id="skewx" value="0" min="0" max="50">
+            <p>SkewY</p>
+            <input type="range" name="skewy" id="skewy" value="-10" min="-25" max="50">
+            <p>Angle</p>
+            <input type="range" name="angle" id="angle" value="43" min="20" max="50">
+            <p>Send backwards</p>
+            <input type="checkbox" name="back" id="back" checked>
+            <br>
+            <button>
+                <a href="#" id="download">Download</a>
+            </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/fabric@5.3.0/dist/fabric.min.js"></script>
+    <script src="common.js"></script>
+    <script src="mockup.js"></script>
+</body>
+
+</html>
