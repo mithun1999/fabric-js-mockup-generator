@@ -60,6 +60,7 @@ fabric.Image.fromURL(
         const imageBlob = dataURLToBlob(imageData);
         const url = URL.createObjectURL(imageBlob);
         downloadEle.href = url;
+        downloadEle.download = "mockup.png";
       },
       { crossOrigin: "Anonymous" }
     );
